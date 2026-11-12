@@ -1,0 +1,51 @@
+
+{
+  "Records": [
+    {
+      "eventID": "demo-event-001",
+      "eventTime": "2026-10-26T10:00:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Failure"
+      }
+    },
+    {
+      "eventID": "demo-event-002",
+      "eventTime": "2026-10-26T10:05:00Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.10",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-user"
+      },
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      }
+    },
+    {
+      "eventID": "demo-event-003",
+      "eventTime": "2026-10-26T10:10:00Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.25",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-admin"
+      },
+      "requestParameters": {
+        "name": "demo-trail"
+      },
+      "responseElements": null
+    }
+  ]
+}
